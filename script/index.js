@@ -6,55 +6,27 @@ function contar()
     var msg = document.getElementById("iRes")
     var contador = 0
    
-    if (inicio.lenght != 0)
+    if (inicio.lenght == 0 || fim.lenght == 0 || passo == 0) 
     {
-        if(fim.lenght != 0)
-        {
-            if(passo.lenght != 0)
-            {
-                for (contador = inicio; contador <= fim; contador++) 
-                {   
-                    msg.innerText += ` ${contador} + `
-                }
-            }
-            else
-            {
-                alert("Impossivel Continuar")
-            }
-        }
-        else
-        {
-            alert("Impossivel Continuar")
-        }
+        window.alert("ERRO")
     }
     else
     {
-        alert("Impossivel Contar")
-    }
-        if (inicio.lenght != 0)
-    {
-        if(fim.lenght != 0)
+        if(inicio < fim)
         {
-            if(passo.lenght != 0)
-            {
-                for (contador = inicio; contador <= fim; contador++) 
-                {   
-                    msg.innerText += ` ${contador} + `
-                }
-            }
-            else
-            {
-                alert("Impossivel Continuar")
+            for (contador = inicio; contador <= fim; contador += passo) 
+            {   
+                msg.innerText += ` ${contador} 👉  `
             }
         }
-        else
+        if (inicio > fim)
         {
-            alert("Impossivel Continuar")
+            for (contador = inicio; contador >= fim; contador -= passo) 
+            {   
+                msg.innerText += ` ${contador} 👉  `
+            }
         }
-    }
-    else
-    {
-        alert("Impossivel Contar")
-    }
 
+    }
+    msg.innerText += "👌 "
 }
