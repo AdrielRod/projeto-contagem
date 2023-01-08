@@ -1,0 +1,38 @@
+@charset "UTF-8";
+*{
+    font-family: arial;
+}
+body{
+    background-color: rgb(66, 143, 206);
+}
+header > h1{
+    color: white;
+    text-align: center;
+}
+section{
+    background-color: white;
+    min-width: 400px;
+    border-radius: 10px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.404);
+    padding: 20px;
+}
+footer{
+    text-align: center;
+    color: black;
+}
+label{
+    margin: 10px;
+}
+#iInicio, #iFim, #iPasso{
+    width: 78vw;
+}
+.inputs{
+    margin: 10px;
+    display: block;
+}
+#iButao{
+    padding: 4px;
+}
+div{
+    margin: 10px;
+}
