@@ -19,6 +19,7 @@ section{
 footer{
     text-align: center;
     color: black;
+    background-color: rgb(66, 143, 206);
 }
 label{
     margin: 10px;
