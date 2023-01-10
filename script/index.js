@@ -6,6 +6,8 @@ function contar()
     var msg = document.getElementById("iRes")
     var contador = 0
    
+    msg.innerText = ""
+    
     if (inicio.lenght == 0 || fim.lenght == 0 || passo == 0) 
     {
         window.alert("ERRO")

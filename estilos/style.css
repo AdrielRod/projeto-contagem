@@ -11,10 +11,11 @@ header > h1{
 }
 section{
     background-color: white;
-    min-width: 400px;
+    width: 80vw;
     border-radius: 10px;
     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.404);
     padding: 20px;
+    margin: 0 auto;
 }
 footer{
     text-align: center;
@@ -36,4 +37,10 @@ label{
 }
 div{
     margin: 10px;
+}
+
+@media screen and (width > 979){
+    section{
+        width: 20px;
+    }
 }
